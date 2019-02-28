@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "Barcode";
+    src: url("LibreBarcode128-Regular.ttf");
+}
+.color{
+    background-color: red;
+}
+body {
+    background-image: url("back.jpg");
+    background-repeat: no-repeat;
+    background-color: black;
+    margin: 0;
+}
+
+#title {
+    text-align: center;
+    font-size: 100px;
+    font-family: Barcode, serif;
+}
+
+table {
+    margin: 0 auto 100px auto;
+    background-color: #48a3ff;
+}
+
+td {
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 50%;
+    width: 57px;
+    height: 57px;
+    background-color: #E0E0E0;
+    box-shadow: 2px 2px 10px rgba(1,1,1,0.4);
+}
+td:hover {
+    background-color: #BABABA;
+    box-shadow: none;
+}
+
+#parameters {
+    text-align: center;
+    background-color: #2a5e93;
+    margin: 30px auto;
+    padding-top: 30px;
+    width: 450px;
+    border-radius: 5%;
+    box-shadow:0 0 15px 5px rosybrown;
+}
+
+#player1, #player2 {
+    margin-right: 10px;
+}
+
+#play, #replay, #undo {
+    padding: 10px;
+    margin: 3px;
+}
+
+#columns, #lines {
+    width: 50px;
+}
+
+#undo {
+    margin-bottom: 15px;
+}
+
+#who_turn {
+    font-size: 30px;
+    padding: 10px;
+}
+
+.full {
+    animation: bounce 0.45s ease 1 alternate;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(-1100px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
