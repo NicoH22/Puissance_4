@@ -1,3 +1,4 @@
 # Puissance_4
 
-    In progress
+    In progress...
+    Training project on jQuery.
